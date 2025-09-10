@@ -1,6 +1,6 @@
-A series of 3D computer vision problems.
+# A series of 3D computer vision problems.
 
-How to execute problem 2:
+# How to execute problem 2:
 
 cd problem2
 
@@ -9,15 +9,15 @@ python problem2.py \
   --output face1.png \
   --fov 90 --roll 0 --pitch 0 --yaw 0 --size 600
 
-How to execute problem 3:
+# How to execute problem 3:
 
 cd problem3
 
-# calculates camera poses using chessboard
+calculates camera poses using chessboard
 python 1_chessboard_calibration.py
-# aligns the two sets of camera poses of colmap and opencv
+aligns the two sets of camera poses of colmap and opencv
 python 2_coordinate_alignment.py
-# converts the final poses to colmap format for viewing purposes
+converts the final poses to colmap format for viewing purposes
 python 3_convert_to_colmap.py
 
 outputs: viz_out (set of images with chessboard axis drawn), chessboard_poses.txt (poses generated from opencv), aligned_poses.txt (poses generated from aligning SfM to real world), colmap_aligned (colmap folder of final poses)
